@@ -1,0 +1,5 @@
+Elastic Block Store(EBS) 
+- 대규모로 처리량과 트랜잭션 집약적인 워크로드 모두를 지원하기 위해 Elastic Compute Cloud(EC2)에서 사용하도록 설계된 사용하기 쉬운 고성능 블록 스토리지 서비스
+- 일종의 하드디스크
+- CloudWatch를 통해서 EBS의 통계 열람 가능
+- EC2 인스턴스를 제거해도 EBS는 데이터가 유지됨
