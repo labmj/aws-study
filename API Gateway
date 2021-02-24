@@ -1,1 +1,5 @@
 API Gateway 란?
+- RESTful API를 생성 및 구성 할 수 있게 지원하는 서비스
+- API로 호출될 시 Lambda Function 또는 HTTP응답을 만들수 있음
+
+
