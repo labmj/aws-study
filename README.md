@@ -27,7 +27,8 @@
 ![image](https://user-images.githubusercontent.com/79297534/109103636-9aabf280-776e-11eb-91ab-996cd4ace804.png)
 
 ### POST Lambda 함수생성
-- GET과 동일 함수명만 POST로 지정
+- 함수용도에 따른 이름 설정 (함수이름) : Lambda-hello-post
+- 함수를 작성할때 사용할 언어 선택 (런타임) : Python 3.7
 
 ![image](https://user-images.githubusercontent.com/79297534/109104641-b5329b80-776f-11eb-8fa6-3bfe66c26072.png)
 
@@ -39,14 +40,45 @@
 
 ### API Gateway 생성
 - 검색에서 API Gateway를 쳐서 API Gateway 서비스 선택
-- 현실습에서는 REST API를 활용하므로 REST API 구축 선택
 
 ![image](https://user-images.githubusercontent.com/79297534/109106230-b9ac8380-7772-11eb-821f-d7af2a8495a5.png)
+
+- 실습에서는 REST 프로토콜을 활용하므로 REST API 구축 선택
+
 ![image](https://user-images.githubusercontent.com/79297534/109107540-40626000-7775-11eb-9650-d42e2854ce79.png)
 
-### API Gateway 생성
-- 검색에서 API Gateway를 쳐서 API Gateway 서비스 선택
-- 현실습에서는 REST API를 활용하므로 REST API 구축 선택
+- 이름과 설명, 지역 설정
+
+![image](https://user-images.githubusercontent.com/79297534/109108042-1e1d1200-7776-11eb-84f4-b7f6537780be.png)
+
+### API Gateway 리소스 생성
+- /영역을 잡고 작업에 리소스 생성 선택
+
+![image](https://user-images.githubusercontent.com/79297534/109108160-53c1fb00-7776-11eb-8fdf-2c8aeb9ea20b.png)
+
+- 리소스 이름과 경로를 설정하고 리소스 생성
+
+![image](https://user-images.githubusercontent.com/79297534/109108180-5ae90900-7776-11eb-9df6-ae39ec1ca568.png)
+
+### API Gateway 메서드 생성
+- 생성한 리소스 hello를 잡고 작업에서 메서드 생성 선택
+
+![image](https://user-images.githubusercontent.com/79297534/109108340-ae5b5700-7776-11eb-9a9d-a461892e8cb0.png)
+
+- 메서드를 GET으로 설정하고 체크표시 선택
+
+![image](https://user-images.githubusercontent.com/79297534/109108437-eb274e00-7776-11eb-824b-96e0077bca7d.png)
+
+- 통합환경에 Lambda 함수를 선택하므로 /hello에 GET 메서드로 요청시 Lambda 함수를 실행하도록 설정됨 
+- Lambda 함수를 생성한 리전을 선택
+- 사용할 Lambda함수 선택   
+
+![image](https://user-images.githubusercontent.com/79297534/109108543-1d38b000-7777-11eb-8ee4-e7d946642ed3.png)
+
+- GET과 같은 방식으로 POST 메서드 설정
+
+![image](https://user-images.githubusercontent.com/79297534/109109166-2bd39700-7778-11eb-8d34-a5da59e403c9.png)
+
 
 ### 용어정리
 #### Elastic Block Store(EBS) 
