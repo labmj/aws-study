@@ -39,9 +39,14 @@
 
 ### API Gateway 생성
 - 검색에서 API Gateway를 쳐서 API Gateway 서비스 선택
+- 현실습에서는 REST API를 활용하므로 REST API 구축 선택
 
 ![image](https://user-images.githubusercontent.com/79297534/109106230-b9ac8380-7772-11eb-821f-d7af2a8495a5.png)
+![image](https://user-images.githubusercontent.com/79297534/109107540-40626000-7775-11eb-9650-d42e2854ce79.png)
 
+### API Gateway 생성
+- 검색에서 API Gateway를 쳐서 API Gateway 서비스 선택
+- 현실습에서는 REST API를 활용하므로 REST API 구축 선택
 
 ### 용어정리
 #### Elastic Block Store(EBS) 
