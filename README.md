@@ -26,15 +26,22 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/109103636-9aabf280-776e-11eb-91ab-996cd4ace804.png)
 
-### POST Lambda 함수생성 및 완료
+### POST Lambda 함수생성
 - GET과 동일 함수명만 POST로 지정
 
 ![image](https://user-images.githubusercontent.com/79297534/109104641-b5329b80-776f-11eb-8fa6-3bfe66c26072.png)
 
 ### POST Lambda 함수코드 수정
-- 'key'를 정의하여 post 방식일때 호출된 메세지를 설정 
+- API Gateway로 넘어오는 데이터는 JSON 형식으로 넘어오며, event안에 담겨있음
+- JSON데이터에 key를 'key'로 정의하여, post 방식일때 호출된 메세지를 설정 
 
 ![image](https://user-images.githubusercontent.com/79297534/109105793-f5931900-7771-11eb-89a2-296f5c70defa.png)
+
+### API Gateway 생성
+- 검색에서 API Gateway를 쳐서 API Gateway 서비스 선택
+
+![image](https://user-images.githubusercontent.com/79297534/109106230-b9ac8380-7772-11eb-821f-d7af2a8495a5.png)
+
 
 ### 용어정리
 #### Elastic Block Store(EBS) 
