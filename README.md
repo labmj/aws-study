@@ -4,11 +4,25 @@
 
 - REST API 및 Websocket API를 생성, 유지, 관리하는 AWS 서비스
 - API로 호출될 시 Lambda Function 또는 HTTP응답을 만들수 있음
-- API Gateway는 HTTPS Endpoints 통해 URI를 
+- API Gateway는 HTTPS Endpoints 통해 URI를 게시함
+- 핵심 구성요소로 Resource, Method, Stage가 있음
 
 ![apig작동방식](https://user-images.githubusercontent.com/79297534/108957821-78a26980-76b5-11eb-9363-a6c04c165e4a.png)
 
-- 작성중
+### Resource
+- 서비스의 대상이되는 자원을 의미함
+- 모든 자원을 HTTP URI로 표현하는 REST의 특성상, 각 리소스는 고유의 URI를 부여받음
+- 리소스는 HTTP Method를 생성할 수 있으며, Method에 대해 연결 포인트를 만들어 행동 대상을 지정할 수 있음
+
+### Method
+- 서비스의 대상으로 지정된 자원에 대해 동작할 행동을 정의함
+- HTTP Method가 사용되며 GET, PUT, POST, HEAD, OPTION 등이 있음
+- Lambda를 연결 포인트로 지정시 Lambda Function을 호출하여 수행함
+
+### Stage
+- Resource와 Method 요소를 하나로 합쳐 콘솔에서는 Resouce라 표현하며, 이를 배포한 것이 Stage임
+- Client가 실제로 사용하기 위해 생성해야하는 배포판
+- Stage 생성시 각 리소스에 대해 URI가 생성됨
 
 ## API Gateway와 Lambda를 활용한 RestFul API 생성 실습
 ### GET API를 위한 Lambda 함수생성 화면
@@ -132,7 +146,19 @@
 #### Lambda
 - 서버를 프로비저닝하거나 관리하지 않고도 코드를 실행할 수 있게 해주는 컴퓨팅 서비스
 - 프로비저닝:사용자의 요구에 맞게 시스템 자원을 할당, 배치, 배포해 두었다가 필요 시 시스템을 즉시 사용할 수 있는 상태로 미리 준비해 두는 것
-- 참고 : https://brownbears.tistory.com/428
 #### API
 - API(Application Programming Interface)는 응용 프로그램에서 사용할 수 있도록, 운영 체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만든 인터페이스를 의미함
-- 참고 : https://moonspam.github.io/What-is-an-API/
+#### URI와 URL
+- URL(Uniform Resource Locator)은 웹 상에서 서비스를 제공하는 각 서버들에 있는 파일들의 위치를 표시하기 위한 것으로 접속할 서비스의 종류,도메인명,파일의 위치 등을 포함함 
+- URI(Uniform Resource Identifier)는 존재하는 자원을 식별하기 위한 일반적인 식별자를 규정하기 위한 것으로 URL에서 HTTP프로토콜,호스트명,port 번호를 제외한 것
+#### Endpoint
+- 메서드는 같은 URI들에 대해서도 다른 요청을 하게끔 구별해주는 항목
+![image](https://user-images.githubusercontent.com/79297534/109127615-f76cd480-7791-11eb-921b-bb0f1487f4ac.png)
+
+### 참고한 사이트
+- https://aws-hyoh.tistory.com/entry/SAA-31-API-Gateway
+- https://dydrlaks.medium.com/rest-api-3e424716bab
+- https://lambdaexp.tistory.com/39
+- https://galid1.tistory.com/398
+- https://brownbears.tistory.com/428
+- https://moonspam.github.io/What-is-an-API/
