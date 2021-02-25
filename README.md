@@ -1,13 +1,10 @@
 # 1. API Gateway
 
 ## API Gateway 란?
-
 - REST API 및 Websocket API를 생성, 유지, 관리하는 AWS 서비스
 - API로 호출될 시 Lambda Function 또는 HTTP응답을 만들수 있음
 - API Gateway는 HTTPS Endpoints 통해 URI를 게시함
 - 핵심 구성요소로 Resource, Method, Stage가 있음
-
-![apig작동방식](https://user-images.githubusercontent.com/79297534/108957821-78a26980-76b5-11eb-9363-a6c04c165e4a.png)
 
 ### Resource
 - 서비스의 대상이되는 자원을 의미함
