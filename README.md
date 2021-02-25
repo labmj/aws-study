@@ -2,13 +2,14 @@
 
 ## API Gateway 란?
 
-- RESTful API를 생성 및 구성 할 수 있게 지원하는 서비스
+- REST API 및 Websocket API를 생성, 유지, 관리하는 AWS 서비스
 - API로 호출될 시 Lambda Function 또는 HTTP응답을 만들수 있음
 
 ![apig작동방식](https://user-images.githubusercontent.com/79297534/108957821-78a26980-76b5-11eb-9363-a6c04c165e4a.png)
 
+- 작성중
 
-## API Gateway와 Lambda를 활용한 RestFul API 생성
+## API Gateway와 Lambda를 활용한 RestFul API 생성 실습
 ### GET API를 위한 Lambda 함수생성 화면
 - 함수용도에 따른 이름 설정 (함수이름) : Lambda-hello-get
 - 함수를 작성할때 사용할 언어 선택 (런타임) : Python 3.7
@@ -78,6 +79,42 @@
 - GET과 같은 방식으로 POST 메서드 설정
 
 ![image](https://user-images.githubusercontent.com/79297534/109109166-2bd39700-7778-11eb-8d34-a5da59e403c9.png)
+
+- 메서드 설정까지 완료후 Lambda에 트리거 부분에 API Gateway가 자동으로 등록됨 (Lambda 부분으로 넘어가서 확인 가능) 
+
+![image](https://user-images.githubusercontent.com/79297534/109109480-bf0ccc80-7778-11eb-9a3c-5ee81c85190e.png)
+
+### REST API 배포
+- 리소스에서 /영역을 선택하고 작업에서 API배포를 선택
+
+![image](https://user-images.githubusercontent.com/79297534/109110037-b4066c00-7779-11eb-83e5-369067fc81e7.png)
+
+
+- 새 스테이지로 선택하고, 스테이지의 이름, 설명, 배포의 설명을 아래 그림과 같이 채워줌
+
+![image](https://user-images.githubusercontent.com/79297534/109110137-df895680-7779-11eb-905c-8a769b0ebf57.png)
+
+- 좌측 스테이지 탭에서 생성된 스테이지 선택후 "URL호출"에 있는 주소 복사해두기 
+
+![image](https://user-images.githubusercontent.com/79297534/109110658-dfd62180-777a-11eb-8617-442e225930c2.png)
+
+### URL에 접근해보기
+- 복사한 URL주소를 크롬 주소창에 붙여넣기 
+- 복사한 주소는 "/" 즉 루트 리소스를 가르키므로 "/"에 대한 메서드가 정의되지 않으면 아래와 같은 오류가 발생함
+
+![image](https://user-images.githubusercontent.com/79297534/109111379-2415f180-777c-11eb-96ae-75386c66166c.png)
+
+- 복사한 주소뒤에 "/hello"(메서드를 정의해둔 리소스 이름)를 붙여넣기
+- GET으로 설정한 람다에서 설정한 메세지 출력 확인
+
+![image](https://user-images.githubusercontent.com/79297534/109111924-1e6cdb80-777d-11eb-9bd7-36733041a993.png)
+
+### POST 메서드 요청해보기(python)
+- requests 라이브러리 설치후 이를 활용한 get, post 메서드 요청
+
+![image](https://user-images.githubusercontent.com/79297534/109112128-799ece00-777d-11eb-999c-24140212816b.png)
+
+![image](https://user-images.githubusercontent.com/79297534/109112146-81f70900-777d-11eb-98dd-c7d58664b224.png)
 
 
 ### 용어정리
