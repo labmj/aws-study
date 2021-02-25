@@ -24,6 +24,7 @@
 
 ### GET Lambda 함수코드 수정
 - GET함수에서 출력될 메세지 설정 (body 부분 수정)
+- 수정완료후 Deploy(전개)선택
 
 ![image](https://user-images.githubusercontent.com/79297534/109103636-9aabf280-776e-11eb-91ab-996cd4ace804.png)
 
@@ -35,7 +36,8 @@
 
 ### POST Lambda 함수코드 수정
 - API Gateway로 넘어오는 데이터는 JSON 형식으로 넘어오며, event안에 담겨있음
-- JSON데이터에 key를 'key'로 정의하여, post 방식일때 호출된 메세지를 설정 
+- JSON데이터에 key를 'key'로 정의하여, post 방식일때 호출된 메세지를 설정
+- 수정완료후 Deploy(전개)선택 
 
 ![image](https://user-images.githubusercontent.com/79297534/109105793-f5931900-7771-11eb-89a2-296f5c70defa.png)
 
