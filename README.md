@@ -4,6 +4,7 @@
 
 - REST API 및 Websocket API를 생성, 유지, 관리하는 AWS 서비스
 - API로 호출될 시 Lambda Function 또는 HTTP응답을 만들수 있음
+- API Gateway는 HTTPS Endpoints 통해 URI를 
 
 ![apig작동방식](https://user-images.githubusercontent.com/79297534/108957821-78a26980-76b5-11eb-9363-a6c04c165e4a.png)
 
@@ -40,6 +41,7 @@
 - 수정완료후 Deploy(전개)선택 
 
 ![image](https://user-images.githubusercontent.com/79297534/109105793-f5931900-7771-11eb-89a2-296f5c70defa.png)
+![temp-8540-11-1614241606](https://user-images.githubusercontent.com/79297534/109126952-35b5c400-7791-11eb-8eeb-863b1f5f767c.jpg)
 
 ### API Gateway 생성
 - 검색에서 API Gateway를 쳐서 API Gateway 서비스 선택
