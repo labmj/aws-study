@@ -151,6 +151,8 @@
 #### Endpoint
 - 메서드는 같은 URI들에 대해서도 다른 요청을 하게끔 구별해주는 항목
 ![image](https://user-images.githubusercontent.com/79297534/109127615-f76cd480-7791-11eb-921b-bb0f1487f4ac.png)
+#### VPC Endpoint
+- VPC Endpoint는 가상 장치로서 VPC와 AWS 서비스를 전용 연결(private connection)할 수 있도록 함
 
 ### 참고한 사이트
 - https://aws-hyoh.tistory.com/entry/SAA-31-API-Gateway
