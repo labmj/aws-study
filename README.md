@@ -131,6 +131,15 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/109112146-81f70900-777d-11eb-98dd-c7d58664b224.png)
 
+### 추가 세부사항
+- 메서드 실행 구조
+
+![image](https://user-images.githubusercontent.com/79297534/109917756-30a8c580-7cf9-11eb-8290-2b3a70316c5a.png)
+
+- 메서드 요청 (승인 :
+![image](https://user-images.githubusercontent.com/79297534/109918050-baf12980-7cf9-11eb-8566-40693102ef6e.png)
+
+
 
 ### 용어정리
 #### Elastic Block Store(EBS) 
